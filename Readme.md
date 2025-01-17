@@ -2,9 +2,9 @@
 The projects are based on <span style="color:teal;">RESTful APIs (Representational State Transfer APIs)</span> which are widely used to exchange information between systems.In RESTful APIs data is transferred in <span style="color:teal;">JSON</span> format to ensure easy and efficient communication.All API interactions and testing for the projects are carried out using <span style="color:teal;"> Postman </span>
 
 <table>
-<th>Project Name</th>
+<th>Projects Name</th>
 <th>Description</th>
-<th>Project Link</th>
+<th>Projects Link</th>
 <tr>
 <td>World Population API</td>
 <td>  A dummy API created with JSON Data where GET,POST,PUT,PATCH,DELETE Requests are performed to validate the API functionality </td>
