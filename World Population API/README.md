@@ -42,10 +42,11 @@ Type the below command in cmd/terminal:
 <br>
 ```json-server world-population.json```<br> 
 
-Image
+![Image](https://github.com/user-attachments/assets/6645808e-c5fc-460e-8b77-885b793b5000) <br>
 #### Generated URI:  http://localhost:3000/world-population<br>
-This REST API shows all the world population data available in the JSON file <Br>
-image of browser<br>
+This REST API shows all the world population data available in the JSON file <br>
+
+![Image](https://github.com/user-attachments/assets/9040d956-b7d5-48ab-84ba-250341397946)<br>
 ***Created API should be running till the cmd/terminal is closed<br>***
 </ol>
 
