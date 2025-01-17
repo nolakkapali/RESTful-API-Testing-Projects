@@ -28,7 +28,7 @@ Project Link: [Spotify Web API Postman](https://www.postman.com/nolakkapali/nola
 <b>Step-7:</b> Go to the Spotify developers website<br> 
 <b>Step-8:</b> Visit Documentation->Web APIs-> Concepts<br> 
 <b>Step-9:</b> For our OAuth 2.0 Grant type is Authorization Code and the authorization Code flow is given below:<br> 
-imagee<br> 
+![Image](https://github.com/user-attachments/assets/7a76239e-d410-44ee-9247-cdf02251200f)<br> 
 <b>Step-10:</b> Fill up Access token, Auth URL, Scope based on the authorization guide in the Spotify Documentation<br> 
 <b>Step-11:</b> Click Get New Access Token<br> 
 <b>Step-12:</b> Access token is generated then Click Use token </ol>
