@@ -1,5 +1,5 @@
 # RESTful API Testing Projects
-The projects are based on <span style="color:teal;">RESTful APIs (Representational State Transfer APIs)</span> which are widely used to exchange information between systems.In RESTful APIs data is transferred in <span style="color:teal;">JSON</span> format to ensure easy and efficient communication.All API interactions and testing for the projects are carried out using <span style="color:teal;"> Postman </span>
+The projects are based on <span style="color:teal;">RESTful APIs (Representational State Transfer APIs)</span> which are widely used to exchange information between systems.In RESTful APIs data is transferred in <span style="color:teal;">JSON</span> format to ensure easy and efficient communication.All API interactions and testing for the projects are carried out using <span style="color:teal;"> Postman. </span>
 
 <table>
 <th>Projects Name</th>
