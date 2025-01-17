@@ -1,0 +1,511 @@
+Test Scenario ID,Test Scenario Description,Test Case ID,Test Case Description,API Endpoints,Http Requests,Request Body,Automation Scripts,Expected Response Body,Expected Status Code,Actual Response Body,Actual Status Code,Test Status,Comments
+TS_BooksAPI_01,Validate API status,TC_BooksAPI_01,Verify status code of API status,https://simple-books-api.glitch.me/status,GET,N/A,Yes,"{
+    ""status"": ""OK""
+}",200 OK,"{
+    ""status"": ""OK""
+}",200 OK,Pass,
+,,TC_BooksAPI_02,Check status name of API status,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_03,Check response header of API status,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_04,"Verify response body ""status"" is ""OK""",,,,Yes,,200 OK,,200 OK,Pass,
+TS_BooksAPI_02,"Verify displaying list of books details
+
+
+
+
+",TC_BooksAPI_05,Verify status code of list of books,https://simple-books-api.glitch.me/books,GET,N/A,Yes,"[
+    {
+        ""id"": 1,
+        ""name"": ""The Russian"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 2,
+        ""name"": ""Just as I Am"",
+        ""type"": ""non-fiction"",
+        ""available"": false
+    },
+    {
+        ""id"": 3,
+        ""name"": ""The Vanishing Half"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 4,
+        ""name"": ""The Midnight Library"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 5,
+        ""name"": ""Untamed"",
+        ""type"": ""non-fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 6,
+        ""name"": ""Viscount Who Loved Me"",
+        ""type"": ""fiction"",
+        ""available"": true
+    }
+]",200 OK,"[
+    {
+        ""id"": 1,
+        ""name"": ""The Russian"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 2,
+        ""name"": ""Just as I Am"",
+        ""type"": ""non-fiction"",
+        ""available"": false
+    },
+    {
+        ""id"": 3,
+        ""name"": ""The Vanishing Half"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 4,
+        ""name"": ""The Midnight Library"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 5,
+        ""name"": ""Untamed"",
+        ""type"": ""non-fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 6,
+        ""name"": ""Viscount Who Loved Me"",
+        ""type"": ""fiction"",
+        ""available"": true
+    }
+]",200 OK,Pass,
+,,TC_BooksAPI_06,Check status name of list of books,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_07,Check response header is present,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_08,Check response header has correct value,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_09,Verify response body data types,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_10,Verify JSON schema ,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_11,Verify response body has correct values,,,,Yes,,200 OK,,200 OK,Pass,
+TS_BooksAPI_03,"Validate displaying list of books when ""type"" is ""fiction""",TC_BooksAPI_12,Verify displaying fictional list of books,https://simple-books-api.glitch.me/books?type=fiction,GET,Query Parameter:                                                    Key=type                                         Value=fiction,No,"[
+    {
+        ""id"": 1,
+        ""name"": ""The Russian"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 3,
+        ""name"": ""The Vanishing Half"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 4,
+        ""name"": ""The Midnight Library"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 6,
+        ""name"": ""Viscount Who Loved Me"",
+        ""type"": ""fiction"",
+        ""available"": true
+    }
+]",200 OK,"[
+    {
+        ""id"": 1,
+        ""name"": ""The Russian"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 3,
+        ""name"": ""The Vanishing Half"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 4,
+        ""name"": ""The Midnight Library"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 6,
+        ""name"": ""Viscount Who Loved Me"",
+        ""type"": ""fiction"",
+        ""available"": true
+    }
+]",200 OK,Pass,
+,,TC_BooksAPI_13,Verify status code ,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_14,Check status name ,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_15,Check response header is present,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_16,Check response header has correct value,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_17,Verify response body data types,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_18,Verify JSON schema ,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_19,Verify response body has correct values,,,,Yes,,200 OK,,200 OK,Pass,
+TS_BooksAPI_04,"Validate displaying list of books when ""type"" is ""non-fiction""",TC_BooksAPI_20,Verify displaying non-fictional list of books,https://simple-books-api.glitch.me/books?type=non-fiction,GET,Query Parameter:                                                    Key=type                                         Value=non-fiction,No,"[
+    {
+        ""id"": 2,
+        ""name"": ""Just as I Am"",
+        ""type"": ""non-fiction"",
+        ""available"": false
+    },
+    {
+        ""id"": 5,
+        ""name"": ""Untamed"",
+        ""type"": ""non-fiction"",
+        ""available"": true
+    }
+]",200 OK,"[
+    {
+        ""id"": 2,
+        ""name"": ""Just as I Am"",
+        ""type"": ""non-fiction"",
+        ""available"": false
+    },
+    {
+        ""id"": 5,
+        ""name"": ""Untamed"",
+        ""type"": ""non-fiction"",
+        ""available"": true
+    }
+]",200 OK,Pass,
+,,TC_BooksAPI_21,Verify status code ,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_22,Check status name ,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_23,Check response header is present,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_24,Check response header has correct value,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_25,Verify response body data types,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_26,Verify JSON schema ,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_27,Verify response body has correct values,,,,Yes,,200 OK,,200 OK,Pass,
+TS_BooksAPI_05,"Validate displaying list of books when ""available"" is ""true""",TC_BooksAPI_28,Verify displaying list of available books,https://simple-books-api.glitch.me/books?available=true,GET,Query Parameter:                                                    Key=available                                        Value=true,Yes,"[
+    {
+        ""id"": 1,
+        ""name"": ""The Russian"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 3,
+        ""name"": ""The Vanishing Half"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 4,
+        ""name"": ""The Midnight Library"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 5,
+        ""name"": ""Untamed"",
+        ""type"": ""non-fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 6,
+        ""name"": ""Viscount Who Loved Me"",
+        ""type"": ""fiction"",
+        ""available"": true
+    }
+]",200 OK,"[
+    {
+        ""id"": 1,
+        ""name"": ""The Russian"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 2,
+        ""name"": ""Just as I Am"",
+        ""type"": ""non-fiction"",
+        ""available"": false
+    },
+    {
+        ""id"": 3,
+        ""name"": ""The Vanishing Half"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 4,
+        ""name"": ""The Midnight Library"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 5,
+        ""name"": ""Untamed"",
+        ""type"": ""non-fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 6,
+        ""name"": ""Viscount Who Loved Me"",
+        ""type"": ""fiction"",
+        ""available"": true
+    }
+]",200 OK,Fail,
+,,TC_BooksAPI_29,Verify status code ,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_30,Check status name ,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_31,Check response header is present,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_32,Check response header has correct value,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_33,Verify response body data types,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_35,Verify response body has correct values,,,,Yes,,200 OK,,200 OK,Pass,
+TS_BooksAPI_06,"Validate displaying list of books when ""available"" is ""false""",TC_BooksAPI_36,Verify displaying list of not available books,https://simple-books-api.glitch.me/books?available=false,GET,Query Parameter:                                                    Key=available                                        Value=false,Yes,"[
+    {
+        ""id"": 2,
+        ""name"": ""Just as I Am"",
+        ""type"": ""non-fiction"",
+        ""available"": false
+    }
+]",200 OK,"[
+    {
+        ""id"": 1,
+        ""name"": ""The Russian"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 2,
+        ""name"": ""Just as I Am"",
+        ""type"": ""non-fiction"",
+        ""available"": false
+    },
+    {
+        ""id"": 3,
+        ""name"": ""The Vanishing Half"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 4,
+        ""name"": ""The Midnight Library"",
+        ""type"": ""fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 5,
+        ""name"": ""Untamed"",
+        ""type"": ""non-fiction"",
+        ""available"": true
+    },
+    {
+        ""id"": 6,
+        ""name"": ""Viscount Who Loved Me"",
+        ""type"": ""fiction"",
+        ""available"": true
+    }
+]",200 OK,Fail,
+,,TC_BooksAPI_37,Verify status code,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_38,Check status name ,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_39,Check response header is present,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_40,Check response header has correct value,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_41,Verify response body data types,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_43,Verify response body has correct values,,,,Yes,,200 OK,,200 OK,Pass,
+TS_BooksAPI_07,Verify displaying single book details,TC_BooksAPI_44,Verify status code of single book information,https://simple-books-api.glitch.me/books/:bookId,GET,"Path Variable:                                                             Key: bookID, Value: 6",Yes,"{
+    ""id"": 6,
+    ""name"": ""Viscount Who Loved Me"",
+    ""author"": ""Julia Quinn"",
+    ""type"": ""fiction"",
+    ""price"": 15.6,
+    ""current-stock"": 1021,
+    ""available"": true
+}",200 OK,"{
+    ""id"": 6,
+    ""name"": ""Viscount Who Loved Me"",
+    ""author"": ""Julia Quinn"",
+    ""type"": ""fiction"",
+    ""price"": 15.6,
+    ""current-stock"": 1021,
+    ""available"": true
+}",200 OK,Pass,
+,,TC_BooksAPI_45,Check status name of  single book information,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_46,Check response header is present,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_47,Check response header has correct value,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_48,Verify response body data types,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_49,Verify JSON schema ,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_50,Verify response body has correct values,,,,Yes,,200 OK,,200 OK,Pass,
+TS_BooksAPI_08,Validate successful token generation to get in the system,TC_BooksAPI_51,Verify status code of successful token generation,https://simple-books-api.glitch.me/api-clients/,POST,"{
+   ""clientName"": ""{{Client Name}}"",
+   ""clientEmail"": ""{{Client Email}}""
+}",Yes,"{
+    ""accessToken"": "".........""
+}                                                                    A token number with values of digits and characters   ",201 Created,"{
+    ""accessToken"": "".........""
+}                                                                    A token number with values of digits and characters   ",201 Created,Pass,
+,,TC_BooksAPI_52,Check status name of  successful token generation,,,,Yes,,201 Created,,201 Created,Pass,
+,,TC_BooksAPI_53,Check response header is present,,,,Yes,,201 Created,,201 Created,Pass,
+,,TC_BooksAPI_54,Check response header has correct value,,,,Yes,,409 Conflict,,201 Created,Pass,
+TS_BooksAPI_09,Validate token generation with already authenticated values ,TC_BooksAPI_55,Verify status code of token generation,,POST,"{
+   ""clientName"": ""{{Client Name}}"",
+   ""clientEmail"": ""{{Client Email}}""
+}",Yes,"{
+    ""error"": ""API client already registered. Try a different email.""
+}",409 Conflict,"{
+    ""error"": ""API client already registered. Try a different email.""
+}",409 Conflict,Pass,
+,,TC_BooksAPI_56,Check status name of token generation,,,,Yes,,409 Conflict,,409 Conflict,Pass,
+,,TC_BooksAPI_57,Check response header is present,,,,Yes,,409 Conflict,,409 Conflict,Pass,
+,,TC_BooksAPI_58,Check response header has correct value,,,,Yes,,409 Conflict,,409 Conflict,Pass,
+,,TC_BooksAPI_59,Verify response body value,,,,Yes,,409 Conflict,,409 Conflict,Pass,
+TS_BooksAPI_10,Validate single book order submission,TC_BooksAPI_60,Verify status code of single book order submission,https://simple-books-api.glitch.me/orders,POST,"{
+  ""bookId"":""{{Book ID}}"",
+  ""customerName"": ""{{Customer Name}}""
+}",Yes,"{
+    ""created"": true,
+    ""orderId"": "".................""
+}                                                                                 orderId should be only of digits and characters",201 Created,"{
+    ""created"": true,
+    ""orderId"": "".................""
+}                                                                                 orderId should be only of digits and characters",201 Created,Pass,
+,,TC_BooksAPI_61,Check status name of single book order submission,,,,Yes,,201 Created,,201 Created,Pass,
+,,TC_BooksAPI_62,Check response header is present,,,,Yes,,201 Created,,201 Created,Pass,
+,,TC_BooksAPI_63,Check response header has correct value,,,,Yes,,201 Created,,201 Created,Pass,
+,,TC_BooksAPI_64,Verify response body value,,,,Yes,,201 Created,,201 Created,Pass,
+TS_BooksAPI_11,Verify single book order submission without authentication,TC_BooksAPI_65,Verify status code of single order submission without authentication,,POST,"{
+  ""bookId"":""{{Book ID}}"",
+  ""customerName"": ""{{Customer Name}}""
+}",Yes,"{
+    ""error"": ""Missing Authorization header.""
+}",401 Unauthorized,"{
+    ""error"": ""Missing Authorization header.""
+}",401 Unauthorized,Pass,
+,,TC_BooksAPI_66,Check status name of single order submission without authentication,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+,,TC_BooksAPI_67,Check response header is present,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+,,TC_BooksAPI_68,Check response header has correct value,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+,,TC_BooksAPI_69,Verify response body value,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+TS_BooksAPI_12,Verify displaying list of books order details using authentication,TC_BooksAPI_70,Verify status code of list of books order details using authentication,https://simple-books-api.glitch.me/orders,GET,N/A,Yes,"[
+    {
+        ""id"": ""9PZwG88KBWCMr9cmHC6kY"",
+        ""bookId"": 1,
+        ""customerName"": ""Salimana Akhhter"",
+        ""createdBy"": ""47e01ce6822b6f7460e65eae2880e827728907f9af6a1eefa83f7ec691b4a46b"",
+        ""quantity"": 1,
+        ""timestamp"": 1737056345733
+    },
+    {
+        ""id"": ""N8rgA0JIPTxkjjY5yexUV"",
+        ""bookId"": 5,
+        ""customerName"": ""Will Turner"",
+        ""createdBy"": ""47e01ce6822b6f7460e65eae2880e827728907f9af6a1eefa83f7ec691b4a46b"",
+        ""quantity"": 1,
+        ""timestamp"": 1737056715040
+    },
+    {
+        ""id"": ""jkplvfdGAn97L6rJnM70X"",
+        ""bookId"": 6,
+        ""customerName"": ""Yerin Nan"",
+        ""createdBy"": ""47e01ce6822b6f7460e65eae2880e827728907f9af6a1eefa83f7ec691b4a46b"",
+        ""quantity"": 1,
+        ""timestamp"": 1737056723879
+    }
+]",200 OK,"[
+    {
+        ""id"": ""9PZwG88KBWCMr9cmHC6kY"",
+        ""bookId"": 1,
+        ""customerName"": ""Salimana Akhhter"",
+        ""createdBy"": ""47e01ce6822b6f7460e65eae2880e827728907f9af6a1eefa83f7ec691b4a46b"",
+        ""quantity"": 1,
+        ""timestamp"": 1737056345733
+    },
+    {
+        ""id"": ""N8rgA0JIPTxkjjY5yexUV"",
+        ""bookId"": 5,
+        ""customerName"": ""Will Turner"",
+        ""createdBy"": ""47e01ce6822b6f7460e65eae2880e827728907f9af6a1eefa83f7ec691b4a46b"",
+        ""quantity"": 1,
+        ""timestamp"": 1737056715040
+    },
+    {
+        ""id"": ""jkplvfdGAn97L6rJnM70X"",
+        ""bookId"": 6,
+        ""customerName"": ""Yerin Nan"",
+        ""createdBy"": ""47e01ce6822b6f7460e65eae2880e827728907f9af6a1eefa83f7ec691b4a46b"",
+        ""quantity"": 1,
+        ""timestamp"": 1737056723879
+    }
+]",200 OK,Pass,
+,,TC_BooksAPI_71,Check status name of list of books order details using authentication,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_72,Check response header is present,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_73,Check response header has correct value,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_74,Verify response body data types,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_75,Verify JSON schema ,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_76,"Verify response body ""bookId"" is within the list of books ",,,,Yes,,200 OK,,200 OK,Pass,
+TS_BooksAPI_13,Verify displaying list of books order details without authentication,TC_BooksAPI_77,Verify status code of list of books order details without authentication,,GET,N/A,Yes,"{
+    ""error"": ""Missing Authorization header.""
+}",401 Unauthorized,"{
+    ""error"": ""Missing Authorization header.""
+}",401 Unauthorized,Pass,
+,,TC_BooksAPI_78,Check status name of  list of books order details without authentication,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+,,TC_BooksAPI_79,Check response header is present,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+,,TC_BooksAPI_80,Check response header has correct value,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+,,TC_BooksAPI_81,Verify response body value,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+TS_BooksAPI_14,Verify displaying single order details using authentication,TC_BooksAPI_82,Verify status code of single order details,https://simple-books-api.glitch.me/orders/{{Order_ID}},GET,N/A,Yes,"{
+    ""id"": ""9PZwG88KBWCMr9cmHC6kY"",
+    ""bookId"": 1,
+    ""customer""Salimana Akhhter,
+    ""createdBy"": ""47e01ce6822b6f7460e65eae2880e827728907f9af6a1eefa83f7ec691b4a46b"",
+    ""quantity"": 1,
+    ""timestamp"": 1737056345733
+}",200 OK,"{
+    ""id"": ""9PZwG88KBWCMr9cmHC6kY"",
+    ""bookId"": 1,
+    ""customer""Salimana Akhhter,
+    ""createdBy"": ""47e01ce6822b6f7460e65eae2880e827728907f9af6a1eefa83f7ec691b4a46b"",
+    ""quantity"": 1,
+    ""timestamp"": 1737056345733
+}",200 OK,Pass,
+,,TC_BooksAPI_83,Check status name of single order details,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_84,Check response header is present,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_85,Check response header has correct value,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_86,Verify response body data types,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_87,Verify JSON schema ,,,,Yes,,200 OK,,200 OK,Pass,
+,,TC_BooksAPI_88,"Verify response body ""bookId"" is within the list of books ",,,,Yes,,200 OK,,200 OK,Pass,
+TS_BooksAPI_15,Verify displaying single order details without authentication,TC_BooksAPI_89,Verify status code of single order details without authentication,,GET,N/A,Yes,"{
+    ""error"": ""Missing Authorization header.""
+}",401 Unauthorized,"{
+    ""error"": ""Missing Authorization header.""
+}",401 Unauthorized,Pass,
+,,TC_BooksAPI_90,Check status name of single order details without authentication,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+,,TC_BooksAPI_91,Check response header is present,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+,,TC_BooksAPI_92,Check response header has correct value,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+,,TC_BooksAPI_93,Verify response body value,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+TS_BooksAPI_17,Verify updating an order using authentication,TC_BooksAPI_94,Verify status code ,https://simple-books-api.glitch.me/orders/{{Order_ID}},PATCH,"{
+  ""customerName"":""{{Updated Name}}""
+}",Yes,1,204 No Content,1,204 No Content,Pass,
+,,TC_BooksAPI_95,Check status name ,,,,Yes,,204 No Content,,204 No Content,Pass,
+,,TC_BooksAPI_96,Check response header is present,,,,Yes,,204 No Content,,204 No Content,Pass,
+,,TC_BooksAPI_97,Check response header has correct value,,,,Yes,,204 No Content,,204 No Content,Pass,
+TS_BooksAPI_18,Verify updating an order without authentication,TC_BooksAPI_98,Verify status code ,https://simple-books-api.glitch.me/orders/{{Order_ID}},PATCH,"{
+  ""customerName"":""{{Updated Name}}""
+}",Yes,"{
+    ""error"": ""Missing Authorization header.""
+}",401 Unauthorized,"{
+    ""error"": ""Missing Authorization header.""
+}",401 Unauthorized,Pass,
+,,TC_BooksAPI_99,Check status name ,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+,,TC_BooksAPI_100,Check response header is present,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+,,TC_BooksAPI_101,Check response header has correct value,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+,,TC_BooksAPI_102,Verify response body value,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+TS_BooksAPI_19,Verify deleting a book order using authentication,TC_BooksAPI_103,Verify status code ,https://simple-books-api.glitch.me/orders/{{Order_ID}},DELETE,N/A,Yes,N/A,204 No Content,N/A,204 No Content,Pass,
+,,TC_BooksAPI_104,Check status name ,,,,Yes,,204 No Content,,204 No Content,Pass,
+,,TC_BooksAPI_105,Check response header is present,,,,Yes,,204 No Content,,204 No Content,Pass,
+,,TC_BooksAPI_106,Check response header has correct value,,,,Yes,,204 No Content,,204 No Content,Pass,
+TS_BooksAPI_20,Verify deleting a book order without authentication,TC_BooksAPI_107,Verify status code ,https://simple-books-api.glitch.me/orders/{{Order_ID}},DELETE,N/A,Yes,"{
+    ""error"": ""Missing Authorization header.""
+}",401 Unauthorized,"{
+    ""error"": ""Missing Authorization header.""
+}",401 Unauthorized,Pass,
+,,TC_BooksAPI_108,Check status name ,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+,,TC_BooksAPI_109,Check response header is present,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+,,TC_BooksAPI_110,Check response header has correct value,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,
+,,TC_BooksAPI_111,Verify response body value,,,,Yes,,401 Unauthorized,,401 Unauthorized,Pass,

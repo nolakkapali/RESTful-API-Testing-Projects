@@ -1,0 +1,1614 @@
+{
+	"id": "b70b3e84-d29f-4fb3-9ebb-e922be3f33f6",
+	"name": "Spotify API",
+	"timestamp": "2025-01-11T06:48:53.230Z",
+	"collection_id": "30401768-242d4c41-1d38-4e51-b53e-6fc983fe0d4c",
+	"folder_id": 0,
+	"environment_id": "30401768-854492ab-ac8b-4cd2-b562-355754957c35",
+	"totalPass": 134,
+	"delay": "0",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-01-11T06:48:39.441Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "9d32d9ab-9695-415b-90ed-fa331e3d3cd0",
+			"name": "View Single Album",
+			"url": "https://api.spotify.com/v1/albums/5HOHne1wzItQlIYmLXLYfZ?market=ES",
+			"time": 404,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				404
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "cc2001aa-6efb-4437-b8f8-1b853d83a313",
+			"name": "View New Releases",
+			"url": "https://api.spotify.com/v1/browse/new-releases?limit=20&offset=5",
+			"time": 401,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				401
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "d00c0840-5cd3-4191-aa8c-9ce76ac0d6d8",
+			"name": "View Album Tracks",
+			"url": "https://api.spotify.com/v1/albums/6QeosPQpJckkW0Obir5RT8/tracks?market=ES&limit=4&offset=0",
+			"time": 171,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				171
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "b91a4119-69d3-4224-9749-affd1a09910d",
+			"name": "View User's Saved Albums",
+			"url": "https://api.spotify.com/v1/me/albums?limit=1&offset=0&market=ES",
+			"time": 172,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				172
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "b50d87af-9ee8-4759-bf63-35bd3ce831dd",
+			"name": "Save Albums for Current User",
+			"url": "https://api.spotify.com/v1/me/albums?ids=382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc",
+			"time": 132,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				132
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true
+				}
+			]
+		},
+		{
+			"id": "a6a1cfbe-7c40-4428-80a6-7c72de5d5d52",
+			"name": "View the Saved Albums",
+			"url": "https://api.spotify.com/v1/albums?market=ES&ids=382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc",
+			"time": 212,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				212
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "dd5c8be5-d319-4c7e-9ad0-7b24d9afd6f5",
+			"name": "Remove Users' Saved Albums",
+			"url": "https://api.spotify.com/v1/me/albums?ids=382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc",
+			"time": 131,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				131
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true
+				}
+			]
+		},
+		{
+			"id": "e3c47353-788c-428c-8481-aad6b37073d9",
+			"name": "View Current User's Profile",
+			"url": "https://api.spotify.com/v1/me",
+			"time": 165,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				165
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "261d2e31-d8ec-4baf-942a-4bf198b586ef",
+			"name": "View Current User's Top Items",
+			"url": "https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=2&offset=0",
+			"time": 167,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				167
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "86dd7bef-4ac9-49fa-95cb-f2520511b61a",
+			"name": "Follow Playlist",
+			"url": "https://api.spotify.com/v1/playlists/6QldmPHZUUPmcTy07FsyPI/followers",
+			"time": 185,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true
+				}
+			]
+		},
+		{
+			"id": "40dcba2d-e15a-4f4c-bd2b-3ef8ac7800bc",
+			"name": "Unfollow Playlist",
+			"url": "https://api.spotify.com/v1/playlists/6QldmPHZUUPmcTy07FsyPI/followers",
+			"time": 181,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				181
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true
+				}
+			]
+		},
+		{
+			"id": "941849a9-febf-4c47-b02d-96c102c54946",
+			"name": "Follow Artists or Users",
+			"url": "https://api.spotify.com/v1/me/following?type=artist",
+			"time": 136,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status Code is 204": true,
+				"Status Name is No Content": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is No Content": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				136
+			],
+			"allTests": [
+				{
+					"Status Code is 204": true,
+					"Status Name is No Content": true
+				}
+			]
+		},
+		{
+			"id": "7fec624e-5af3-4a3e-951b-c3d3423836cb",
+			"name": "Unfollow Artists or Users",
+			"url": "https://api.spotify.com/v1/me/following?type=artist",
+			"time": 135,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status Code is 204": true,
+				"Status Name is No Content": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is No Content": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				135
+			],
+			"allTests": [
+				{
+					"Status Code is 204": true,
+					"Status Name is No Content": true
+				}
+			]
+		},
+		{
+			"id": "3c99db59-957a-46bb-b997-387efa1efee7",
+			"name": "Create Playlist",
+			"url": "https://api.spotify.com/v1/users/315dn3yosze5zj34d2rym732yvim/playlists",
+			"time": 219,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status Code is 201": true,
+				"Status Name is Created": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is Created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				219
+			],
+			"allTests": [
+				{
+					"Status Code is 201": true,
+					"Status Name is Created": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "bd8936a0-8ec7-4a8e-ba9c-209ec25380d0",
+			"name": "View Playlist",
+			"url": "https://api.spotify.com/v1/playlists/7wpL0BifDdMXJ8DdhW8bNQ",
+			"time": 448,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				448
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "7cd5c649-7b99-4d91-8e8f-1e3d25f82614",
+			"name": "View Items from Playlist",
+			"url": "https://api.spotify.com/v1/playlists/7wpL0BifDdMXJ8DdhW8bNQ/tracks?limit=10&offset=5",
+			"time": 202,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				202
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "bc5f8a77-2f24-4115-8793-f263add4a31f",
+			"name": "Adding Single Item in Playlist",
+			"url": "https://api.spotify.com/v1/playlists/7wpL0BifDdMXJ8DdhW8bNQ/tracks?uris=spotify:track:1UBd7aWHZCz8yirI9KCvAU",
+			"time": 183,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status Code is 201": true,
+				"Status Name is Created": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is Created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				183
+			],
+			"allTests": [
+				{
+					"Status Code is 201": true,
+					"Status Name is Created": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true
+				}
+			]
+		},
+		{
+			"id": "53bc86be-0745-4889-8089-4092078c906f",
+			"name": "Adding Multiple Items in Playlist",
+			"url": "https://api.spotify.com/v1/playlists/7wpL0BifDdMXJ8DdhW8bNQ/tracks",
+			"time": 229,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status Code is 201": true,
+				"Status Name is Created": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is Created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				229
+			],
+			"allTests": [
+				{
+					"Status Code is 201": true,
+					"Status Name is Created": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true
+				}
+			]
+		},
+		{
+			"id": "c1983738-31e0-4380-922b-c58fb18bfba0",
+			"name": "Updating Items in Playlist",
+			"url": "https://api.spotify.com/v1/playlists/7wpL0BifDdMXJ8DdhW8bNQ/tracks",
+			"time": 200,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				200
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true
+				}
+			]
+		},
+		{
+			"id": "15a05d41-5141-4933-9114-973dd27b7201",
+			"name": "View Single Artist",
+			"url": "https://api.spotify.com/v1/artists/2CIMQHirSU0MQqyYHq0eOx",
+			"time": 139,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				139
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "3e269be7-ccac-4f9a-ab7f-f053a9a3fdcf",
+			"name": "View Several Artists",
+			"url": "https://api.spotify.com/v1/artists?ids=2CIMQHirSU0MQqyYHq0eOx,57dN52uHvrHOxijzpIgu3E,1vCWHaC5f2uS3yhpwWbIA6",
+			"time": 164,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				164
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "ca8834d9-67dc-4676-aebe-60cb550c6aff",
+			"name": "View Artist's Album",
+			"url": "https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg/albums?include_groups=single,appears_on&market=CA",
+			"time": 256,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				256
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "714b56e8-6d7f-4945-bae3-76284fa39c96",
+			"name": "View Artist's Top Tracks",
+			"url": "https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg/top-tracks?market=ES",
+			"time": 168,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				168
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "42b2710f-21a4-4041-b684-ba31b42cb373",
+			"name": "Search for Item",
+			"url": "https://api.spotify.com/v1/search?q=raa&type=album&market=CA&limit=5&offset=3",
+			"time": 356,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				356
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true
+				}
+			]
+		},
+		{
+			"id": "4382219e-b833-43a1-bec6-c90d24043ffa",
+			"name": "View Track",
+			"url": "https://api.spotify.com/v1/tracks/1CsMKhwEmNnmvHUuO5nryA?ES=CA",
+			"time": 140,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				140
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "f12459e6-abfc-458c-82e2-07a39628b57b",
+			"name": "View Several Tracks",
+			"url": "https://api.spotify.com/v1/tracks?ids=6dOtVTDdiauQNBQEDOtlAB,629DixmZGHc7ILtEntuiWE,7BRD7x5pt8Lqa1eGYC4dzj,3QaPy1KgI7nu9FJEQUgn6h&market=CA",
+			"time": 137,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				137
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "c7c35155-0ffb-4aa0-b745-0976837c9e47",
+			"name": "View User's Saved Tracks",
+			"url": "https://api.spotify.com/v1/me/tracks?market=ES&limit=10&offset",
+			"time": 161,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				161
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "64b1bd0e-6a21-4f8b-9929-6b76fc37fadc",
+			"name": "Save Tracks for Current User",
+			"url": "https://api.spotify.com/v1/me/tracks",
+			"time": 135,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				135
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true
+				}
+			]
+		},
+		{
+			"id": "b7a0645d-8c56-430b-b893-05306c320fa0",
+			"name": "Remove User's Saved Tracks",
+			"url": "https://api.spotify.com/v1/me/tracks",
+			"time": 130,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				130
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true
+				}
+			]
+		},
+		{
+			"id": "201749fd-cda3-4510-a5c4-db181b612308",
+			"name": "View Playback State",
+			"url": "https://api.spotify.com/v1/me/player?market=CA",
+			"time": 183,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				183
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "cfe2246b-645b-46bb-9493-a1b90b6df8cc",
+			"name": "View Available Devices",
+			"url": "https://api.spotify.com/v1/me/player/devices",
+			"time": 129,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				129
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		},
+		{
+			"id": "8326df5f-9636-40de-93c5-a7915b04f8b2",
+			"name": "View Currently Playing Track",
+			"url": "https://api.spotify.com/v1/me/player/currently-playing?market=CA",
+			"time": 187,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status Code is 200": true,
+				"Status Name is OK": true,
+				"Content-Type Header is present": true,
+				"Content-Type Header has Proper Value": true,
+				"Validate JSON Schema": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status Name is OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type Header has Proper Value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate JSON Schema": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				187
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true,
+					"Status Name is OK": true,
+					"Content-Type Header is present": true,
+					"Content-Type Header has Proper Value": true,
+					"Validate JSON Schema": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 6358,
+	"collection": {
+		"requests": [
+			{
+				"id": "9d32d9ab-9695-415b-90ed-fa331e3d3cd0",
+				"method": "GET"
+			},
+			{
+				"id": "cc2001aa-6efb-4437-b8f8-1b853d83a313",
+				"method": "GET"
+			},
+			{
+				"id": "d00c0840-5cd3-4191-aa8c-9ce76ac0d6d8",
+				"method": "GET"
+			},
+			{
+				"id": "b91a4119-69d3-4224-9749-affd1a09910d",
+				"method": "GET"
+			},
+			{
+				"id": "b50d87af-9ee8-4759-bf63-35bd3ce831dd",
+				"method": "PUT"
+			},
+			{
+				"id": "a6a1cfbe-7c40-4428-80a6-7c72de5d5d52",
+				"method": "GET"
+			},
+			{
+				"id": "dd5c8be5-d319-4c7e-9ad0-7b24d9afd6f5",
+				"method": "DELETE"
+			},
+			{
+				"id": "e3c47353-788c-428c-8481-aad6b37073d9",
+				"method": "GET"
+			},
+			{
+				"id": "261d2e31-d8ec-4baf-942a-4bf198b586ef",
+				"method": "GET"
+			},
+			{
+				"id": "86dd7bef-4ac9-49fa-95cb-f2520511b61a",
+				"method": "PUT"
+			},
+			{
+				"id": "40dcba2d-e15a-4f4c-bd2b-3ef8ac7800bc",
+				"method": "DELETE"
+			},
+			{
+				"id": "941849a9-febf-4c47-b02d-96c102c54946",
+				"method": "PUT"
+			},
+			{
+				"id": "7fec624e-5af3-4a3e-951b-c3d3423836cb",
+				"method": "DELETE"
+			},
+			{
+				"id": "3c99db59-957a-46bb-b997-387efa1efee7",
+				"method": "POST"
+			},
+			{
+				"id": "bd8936a0-8ec7-4a8e-ba9c-209ec25380d0",
+				"method": "GET"
+			},
+			{
+				"id": "7cd5c649-7b99-4d91-8e8f-1e3d25f82614",
+				"method": "GET"
+			},
+			{
+				"id": "bc5f8a77-2f24-4115-8793-f263add4a31f",
+				"method": "POST"
+			},
+			{
+				"id": "53bc86be-0745-4889-8089-4092078c906f",
+				"method": "POST"
+			},
+			{
+				"id": "c1983738-31e0-4380-922b-c58fb18bfba0",
+				"method": "PUT"
+			},
+			{
+				"id": "15a05d41-5141-4933-9114-973dd27b7201",
+				"method": "GET"
+			},
+			{
+				"id": "3e269be7-ccac-4f9a-ab7f-f053a9a3fdcf",
+				"method": "GET"
+			},
+			{
+				"id": "ca8834d9-67dc-4676-aebe-60cb550c6aff",
+				"method": "GET"
+			},
+			{
+				"id": "714b56e8-6d7f-4945-bae3-76284fa39c96",
+				"method": "GET"
+			},
+			{
+				"id": "42b2710f-21a4-4041-b684-ba31b42cb373",
+				"method": "GET"
+			},
+			{
+				"id": "4382219e-b833-43a1-bec6-c90d24043ffa",
+				"method": "GET"
+			},
+			{
+				"id": "f12459e6-abfc-458c-82e2-07a39628b57b",
+				"method": "GET"
+			},
+			{
+				"id": "c7c35155-0ffb-4aa0-b745-0976837c9e47",
+				"method": "GET"
+			},
+			{
+				"id": "64b1bd0e-6a21-4f8b-9929-6b76fc37fadc",
+				"method": "PUT"
+			},
+			{
+				"id": "b7a0645d-8c56-430b-b893-05306c320fa0",
+				"method": "DELETE"
+			},
+			{
+				"id": "201749fd-cda3-4510-a5c4-db181b612308",
+				"method": "GET"
+			},
+			{
+				"id": "cfe2246b-645b-46bb-9493-a1b90b6df8cc",
+				"method": "GET"
+			},
+			{
+				"id": "8326df5f-9636-40de-93c5-a7915b04f8b2",
+				"method": "GET"
+			}
+		]
+	}
+}
